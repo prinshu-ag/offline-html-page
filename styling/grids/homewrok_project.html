@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flex + Grid Layout</title>
+ 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #0c0101;                                          
+      color: rgb(246, 238, 238);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .hero {
+      display: grid;
+      place-items: center;
+      grid-template-rows: 1fr 1fr;
+      gap: 2rem;
+      padding: 2rem;
+      background: #869108;
+    }
+
+    .hero img {
+      
+      width: 50%;
+     
+      border-radius: 10px;
+    }
+
+    .hero .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero .content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .grid-section {
+      display: grid;
+   grid-template-columns: 1fr 1fr;
+
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    /* .grid-item {
+      background: #5a22ad;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+     
+    } */
+
+     .grid-item button {
+        color: #f1f1ef;
+        background-color: #5a22ad;
+      width: 100px;
+      line-height: 40px;
+     
+      border: 1px solid black;
+      border-radius: 5px;
+    
+    } 
+    .grid-item button:hover{
+        background-color: #020202;
+    }
+  
+
+    footer {
+      background: #0f0303;
+      color: rgb(245, 240, 240);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+ 
+
+  <header>
+    <h2>Shoes on sale</h2>
+    <nav>
+      <a href="#" style="color:white; margin: 0 10px;">Home</a>
+      <a href="#" style="color:white; margin: 0 10px;">About</a>
+      <a href="#" style="color:white; margin: 0 10px;">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="siteshoe_photo.jpg.jpg" alt="Hero Image">
+    <div class="content">
+      <h1>Here are some new and stylish shoes</h1>
+      <p>we have a large number of variety of shoes here and we also take online orders,
+      So please checkout our showroom for more. </p>
+    </div>
+    
+  
+
+ <div class="grid-section">
+    <div class="grid-item">
+    <button type="submit" id="signin">sign up </button>
+     
+    </div>
+    <div class="grid-item">
+      <button type="submit" id="buy">buy now</button>
+    
+    </div>
+    </div>
+   </section>
+    <!-- <div class="grid-item">
+      <img src="your-image-3.jpg" alt="">
+      <p>Item 3</p>
+    </div>
+    <div class="grid-item">
+      <img src="your-image-4.jpg" alt="">
+      <p>Item 4</p>
+    </div>
+  </section> -->
+
+  <footer>
+    <p>&copy; You can contact me at my instagram handle @prinshu_ag</p>
+  </footer>
+
+</body>
+</html>
